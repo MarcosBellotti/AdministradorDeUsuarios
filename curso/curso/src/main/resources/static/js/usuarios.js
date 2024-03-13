@@ -13,7 +13,7 @@ async function cargarUsuarios(){
         }
       });
       const usuarios = await request.json();
-
+      console.log(usuarios);
 
       let listadoHTML='';
       for(let usuario of usuarios){

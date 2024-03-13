@@ -1,6 +1,6 @@
 package com.cursojava.curso.models;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,7 +11,7 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Getter @Setter @Column(name = "id")
     private int Id;
-    @Getter @Setter@Column(name = "nombre")
+    @Getter @Setter @Column(name = "nombre")
     private String Nombre;
     @Getter @Setter @Column(name = "apellido")
     private String Apellido;

@@ -10,4 +10,6 @@ public interface IUsuarioDao {
     void eliminar(int id);
 
     void registrar(Usuario usuario);
+
+    boolean verificarUsuario(Usuario usuario);
 }

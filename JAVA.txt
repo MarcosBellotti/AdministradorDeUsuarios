@@ -1,0 +1,34 @@
+Como se usan las librerias en java --> el problema era el peso de las librerias y cómo pasar un proyecto de manera
+					liviana (tratando de pasar los links para que se las descarguen a las libs)
+					Entonces, al momento de compilar va a descargar TODAS las librerias, por eso, 					la primer compilacion es pesada
+		
+	Maven --> es la primera que aparecio, pero anda bien
+	Gradle --> anda un poco mejor, pero no cambia mucho
+
+
+Funcionalidad de incializar la paginacion 
+
+// Call the dataTables jQuery plugin
+$(document).ready(function() {
+  $('#dataTable').DataTable();
+});
+
+
+---JQuery---
+
+Para ahcer un llamado al servidor tenemos que ahcer FETCH
+Instruccion basica del fetch:
+
+(async () => {
+  const rawResponse = await fetch('https://httpbin.org/post', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({a: 1, b: 'Textual content'})
+  });
+  const content = await rawResponse.json();
+
+  console.log(content);
+})();
